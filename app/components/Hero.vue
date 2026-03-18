@@ -5,9 +5,9 @@
                 md:gap-[50px] md:pt-6 md:pb-6 md:h-[500px]">
 
       <div class="relative flex flex-col items-center md:items-center lg:items-start">
-        <!-- Pulsating Glow -->
+        <!-- Pulsating Glow 
         <div class="absolute top-1/2 left-1/2 lg:w-[280px] lg:h-[280px] md:h-[180px] md:w-[180px] -translate-x-1/2 -translate-y-1/2 
-          bg-[#a35cf0] rounded-xl blur-xl opacity-90 glow-pulse delayed-glow"></div>
+          bg-[#a35cf0] rounded-xl blur-xl opacity-90"></div> -->
 
         <!-- Image on top -->
         <img src="/test4.jpg" alt="My Photo"
@@ -17,7 +17,7 @@
       <div class="flex flex-col">
 
         <div class="relative flex flex-col m-0 text-container opacity-0">
-            <h1 class="lg:text-[60px] md:text-[30px] font-bold text-white leading-[1.1]">
+            <h1 class="lg:text-[60px] md:text-[30px] font-bold text-white leading-[1.1] glowing-text">
             HELLO THERE! 
             </h1>
         </div>
@@ -47,6 +47,17 @@
   animation: pulseGlow 5s ease-in-out infinite;
 }
 
+@keyframes textPulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 4px #a35cf0, 0 0 8px #a35cf0, 0 0 12px #a35cf0;
+    color: #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 5px #a35cf0, 0 0 15px #a35cf0, 0 0 20px #a35cf0;
+    color: #ffffff;
+  }
+}
+
 /* Delayed start for the glow */
 .delayed-glow {
   animation-delay: 3s; /* wait until both texts are done */
@@ -73,5 +84,9 @@
 }
 .text-container1 {
   animation: textFadeIn 1s ease-out 2s forwards;
+}
+
+.glowing-text {
+  animation: textPulseGlow 3s ease-in-out infinite;
 }
 </style>

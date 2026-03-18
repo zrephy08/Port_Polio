@@ -6,7 +6,7 @@
     </h2>
 
     <!-- Projects Container -->
-    <div class="max-w-6xl w-full px-6 grid md:grid-cols lg:grid-cols-3 gap-10">
+    <div class="max-w-7xl w-full px-[100px] grid md:grid-cols lg:grid-cols-2 gap-10">
 
         <!-- Project Card -->
         <div class="group relative rounded-xl overflow-hidden shadow-lg">
@@ -61,6 +61,36 @@
 
             <div class="flex gap-4">
                 <a href="https://github.com/zrephy08/Irecipe" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700">
+                Code
+                </a>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="group relative rounded-xl overflow-hidden shadow-lg">
+            
+            <img 
+            src="/soapstock.jpg"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#0c0217]/80 backdrop-blur-lg opacity-0 
+                        group-hover:opacity-100 transition duration-500 
+                        flex flex-col justify-center items-center text-center p-6">
+            
+            <h3 class="text-xl font-semibold mb-2">
+                Soapstock
+            </h3>
+
+            <p class="text-sm mb-4">
+                Full stack laundromat web stock inventory built with JavaScript, PHP, and MySQL.
+            </p>
+
+            <div class="flex gap-4">
+                <a href="https://github.com/zrephy08/soapstock" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700">
                 Code
                 </a>
             </div>
